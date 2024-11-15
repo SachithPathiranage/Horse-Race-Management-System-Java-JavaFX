@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.horse_management_system.UpdateHorse">
+   <children>
+      <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f93ff00" height="643.0" layoutX="4.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="593.0" />
+      <Label layoutX="200.0" layoutY="40.0" prefHeight="25.0" prefWidth="201.0" text="Update Horse Details">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="95.0" layoutY="98.0" prefHeight="20.0" prefWidth="119.0" text="Enter the Horse ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="horseIdField" layoutX="228.0" layoutY="96.0" prefHeight="25.0" prefWidth="180.0" />
+      <Button layoutX="441.0" layoutY="93.0" mnemonicParsing="false" onAction="#onSearchButtonClick" styleClass="appearButtons3" stylesheets="@mainPage.css" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="24.0" layoutY="22.0" onMouseClicked="#PreviousStage">
+         <image>
+            <Image url="@arrow-left.png" />
+         </image>
+      </ImageView>
+
+      <!-- Text fields to display horse details -->
+      <TextField fx:id="horseIdTextField" layoutX="274.0" layoutY="155.0" prefHeight="25.0" prefWidth="221.0" />
+      <TextField fx:id="horseNameTextField" layoutX="274.0" layoutY="191.0" prefHeight="25.0" prefWidth="221.0" />
+      <TextField fx:id="jockeyNameTextField" layoutX="274.0" layoutY="225.0" prefHeight="25.0" prefWidth="221.0" />
+      <TextField fx:id="ageTextField" layoutX="274.0" layoutY="263.0" prefHeight="25.0" prefWidth="221.0" />
+      <TextField fx:id="breedTextField" layoutX="274.0" layoutY="297.0" prefHeight="25.0" prefWidth="221.0" />
+      <TextField fx:id="raceRecordTextField" layoutX="274.0" layoutY="331.0" prefHeight="25.0" prefWidth="221.0" />
+      <Label layoutX="117.0" layoutY="158.0" prefHeight="20.0" prefWidth="119.0" text="Horse ID:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="194.0" prefHeight="20.0" prefWidth="119.0" text="Horse Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="228.0" prefHeight="20.0" prefWidth="119.0" text="Jockey Name:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="266.0" prefHeight="20.0" prefWidth="119.0" text="Age:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="300.0" prefHeight="20.0" prefWidth="119.0" text="Breed:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="117.0" layoutY="334.0" prefHeight="20.0" prefWidth="119.0" text="Race Record:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="UpdateDetails" layoutX="168.0" layoutY="601.0" mnemonicParsing="false" onAction="#onSaveButtonClick" styleClass="appearButtons1" stylesheets="@mainPage.css" text="Update">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="ClearDetails" layoutX="383.0" layoutY="601.0" mnemonicParsing="false" onAction="#ClearDetails" styleClass="appearButtons2" stylesheets="@mainPage.css" text="Clear">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="113.0" layoutY="373.0" prefHeight="20.0" prefWidth="127.0" text="Image of the Horse:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="254.0" layoutY="362.0" prefHeight="224.0" prefWidth="262.0">
+         <children>
+            <ImageView fitHeight="81.0" fitWidth="84.0" layoutX="89.0" layoutY="67.0" style="-fx-opacity: 0.5;">
+               <image>
+                  <Image url="@add.png" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="207.0" layoutX="8.0" layoutY="5.0" stroke="BLACK" strokeType="INSIDE" style="-fx-opacity: 0.2;" width="245.0" />
+            <ImageView fx:id="horseImageView" fitHeight="192.0" fitWidth="232.0" layoutX="14.0" layoutY="13.0" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="chooseImageButton" layoutX="120.0" layoutY="404.0" mnemonicParsing="false" onAction="#chooseImage" prefHeight="30.0" prefWidth="109.0" styleClass="appearButtons3" stylesheets="@mainPage.css" text="Choose Image">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="668.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.horse_management_system.ViewHorse">
+   <children>
+      <BorderPane layoutX="6.0" layoutY="72.0" prefHeight="590.0" prefWidth="1013.0">
+          <center>
+              <TableView fx:id="horseTableView" prefHeight="574.0" prefWidth="1025.0">
+                  <columns>
+                      <TableColumn fx:id="horseIDColumn" prefWidth="90.39999234676361" text="Horse ID">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="horseID" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="horseNameColumn" prefWidth="137.0" text="Horse Name">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="horseName" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="jockeyNameColumn" prefWidth="125.0" text="Jockey Name">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="jockeyName" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="ageColumn" prefWidth="95.0" text="Age">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="age" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="breedColumn" prefWidth="106.0" text="Breed">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="breed" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="raceRecordColumn" prefWidth="213.0" text="Race Record">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="raceRecord" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="groupColumn" minWidth="0.0" prefWidth="103.0" text="Group">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="group" />
+                          </cellValueFactory>
+                      </TableColumn>
+                      <TableColumn fx:id="horseImageColumn" prefWidth="140.0" text="Horse Image">
+                          <cellValueFactory>
+                              <PropertyValueFactory property="horseImage" />
+                          </cellValueFactory>
+                          <cellFactory>
+
+                    </cellFactory>
+                      </TableColumn>
+                  </columns>
+              </TableView>
+          </center>
+      </BorderPane>
+      <Label layoutX="425.0" layoutY="16.0" prefHeight="41.0" prefWidth="154.0" text="Horse Details">
+         <font>
+            <Font name="Bodoni MT Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="23.0" layoutY="14.0" onMouseClicked="#PreviousStage">
+         <image>
+            <Image url="@arrow-left.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+Horse ID: A1
+Horse Name: Horse1
+Jockey Name: Jockey1
+Age: 5
+Breed: Breed1
+Race Record: Record1
+Image Path: path1.jpg
+
+Horse ID: B2
+Horse Name: Horse2
+Jockey Name: Jockey2
+Age: 6
+Breed: Breed2
+Race Record: Record2
+Image Path: path2.jpg
+
+Horse ID: C3
+Horse Name: Horse3
+Jockey Name: Jockey3
+Age: 7
+Breed: Breed3
+Race Record: Record3
+Image Path: path3.jpg
+
+Horse ID: D4
+Horse Name: Horse4
+Jockey Name: Jockey4
+Age: 8
+Breed: Breed4
+Race Record: Record4
+Image Path: path4.jpg
+

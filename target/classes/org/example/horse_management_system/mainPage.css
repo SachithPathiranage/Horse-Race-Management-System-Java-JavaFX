@@ -1,0 +1,104 @@
+.gradient1 {
+    -fx-background-color: linear-gradient(to bottom, #e2b495, #612800);
+}
+
+.gradient1:hover {
+    -fx-text-fill: white;
+    -fx-background-color: linear-gradient(to bottom, #965a31, #382907);
+}
+
+.border {
+    -fx-border-color: black;
+    -fx-border-width: 2;
+}
+
+.gradient2 {
+    -fx-background-color: linear-gradient(to bottom, #f8d6bc, #e0a880, #f8acac, #ff4c7d);
+}
+
+.buttonMain{
+    -fx-background-color: linear-gradient(to bottom, #0c63d0, #04c0b2);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1;
+}
+
+.buttonMain:hover{
+    -fx-background-color: #5ee7cb;
+    -fx-text-fill: black;
+}
+
+.button2Main{
+    -fx-background-color: linear-gradient(to bottom, #0c63d0, #04c0b2);
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 1;
+}
+
+.button2Main:hover{
+    -fx-background-color: #ff1b4c;
+    -fx-text-fill: #ffffff;
+}
+
+.cursor{
+    -fx-cursor: pointer;
+}
+
+.image:hover{
+    -fx-opacity: 1;
+}
+
+.menuItem:hover{
+    -fx-border-color: #0c8ea9;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.sidebarItem{
+    -fx-background-color:  #0A4965;
+    -fx-text-fill: White;
+}
+
+.sidebarItem:hover{
+    -fx-background-color: #7ec5e1;
+    -fx-text-fill: Black;
+    -fx-border-color: White;
+    -fx-border-width: 0px 0px 3px 0px;
+}
+
+.appearButtons1{
+    -fx-background-color: #7ec5e1;
+    -fx-text-fill: black;
+}
+
+.appearButtons2{
+    -fx-background-color: #7ec5e1;
+    -fx-text-fill: black;
+}
+
+.appearButtons1:hover{
+    -fx-background-color: linear-gradient(to bottom, #b6ea69, #3fbe3f, #0f6932);
+    -fx-text-fill: White;
+    -fx-cursor:pointer;
+}
+
+.appearButtons2:hover{
+    -fx-background-color: linear-gradient(to bottom, #faa0af, #c45656, #360000);
+    -fx-text-fill: White;
+    -fx-cursor:pointer;
+}
+
+.appearButtons3{
+    -fx-background-color: #7ec5e1;
+    -fx-text-fill: black;
+}
+
+.appearButtons3:hover{
+    -fx-background-color: #b5d7e7;
+    -fx-text-fill: black;
+}
+
+.backbutton{
+}
+.backbutton:hover{
+    -fx-opacity: 0.5;
+}

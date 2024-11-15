@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="642.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.horse_management_system.StartRace">
+   <children>
+      <BorderPane layoutX="-4.8" layoutY="126.0" prefHeight="502.0" prefWidth="879.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="79.0" prefWidth="826.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox layoutX="257.0" layoutY="30.4" prefHeight="50.0" prefWidth="674.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="30.0">
+                     <children>
+                        <Button fx:id="Select" mnemonicParsing="false" prefHeight="49.0" prefWidth="214.0" style="-fx-background-color: white;" text="Select Horses">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="29.0">
+                                 <image>
+                                    <Image url="@select.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Winning" mnemonicParsing="false" prefHeight="49.0" prefWidth="232.0" style="-fx-background-color: white;" text="Winning Horses">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="33.0" fitWidth="34.0">
+                                 <image>
+                                    <Image url="@ranking.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="Visual" mnemonicParsing="false" prefHeight="63.0" prefWidth="218.0" style="-fx-background-color: white;" text="Visualization">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="37.0">
+                                 <image>
+                                    <Image url="@infographic.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <Pane layoutX="258.0" layoutY="-0.8" prefHeight="32.0" prefWidth="973.0" style="-fx-background-color: #032d4c;" AnchorPane.bottomAnchor="48.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-1.0" />
+                  <Label fx:id="Menu" layoutX="12.0" layoutY="31.0" prefHeight="48.0" prefWidth="171.0" styleClass="menuItem" stylesheets="@mainPage.css" text="Race Menu">
+                     <font>
+                        <Font name="Footlight MT Light" size="23.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="21.0">
+                           <image>
+                              <Image url="@menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="MenuBack" layoutX="12.0" layoutY="32.0" prefHeight="48.0" prefWidth="171.0" styleClass="menuItem" stylesheets="@mainPage.css" text="Race Menu">
+                     <font>
+                        <Font name="Footlight MT Light" size="23.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="28.0" fitWidth="21.0">
+                           <image>
+                              <Image url="@menu.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="421.0" prefWidth="176.0" style="-fx-background-color: #0A4965;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="8.0" prefHeight="421.0" prefWidth="178.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="selectHorsesButton" mnemonicParsing="false" prefHeight="110.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@mainPage.css" text="Select Horses" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="26.0" fitWidth="29.0">
+                                 <image>
+                                    <Image url="@select.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="winnersButton" mnemonicParsing="false" onMouseClicked="#DisplayWinningHorses" prefHeight="107.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@mainPage.css" text="Winners" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="34.0" fitWidth="37.0">
+                                 <image>
+                                    <Image url="@ranking.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="visualizationButton" mnemonicParsing="false" onMouseClicked="#VisualizeWinningHorses" prefHeight="114.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@mainPage.css" text="Visualization" textFill="WHITE">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="38.0" fitWidth="37.0">
+                                 <image>
+                                    <Image url="@infographic.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <!-- Start Race button -->
+                        <Button fx:id="startRaceButton" layoutX="150.0" layoutY="100.0" mnemonicParsing="false" onAction="#startRace" prefHeight="78.0" prefWidth="176.0" styleClass="appearButtons1" stylesheets="@mainPage.css" text="Start Race" visible="false">
+                           <VBox.margin>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font></Button>
+                        <!-- Clear button -->
+                        <Button fx:id="clearButton" layoutX="250.0" layoutY="100.0" mnemonicParsing="false" onAction="#clearLabels" prefHeight="83.0" prefWidth="176.0" styleClass="appearButtons2" stylesheets="@mainPage.css" text="Clear" visible="false">
+                           <VBox.margin>
+                              <Insets left="20.0" right="20.0" top="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font></Button>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <AnchorPane prefHeight="563.0" prefWidth="852.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="selectHorsesContent" layoutY="-6.0" prefHeight="568.0" prefWidth="662.0" visible="false">
+                     <children>
+                        <Label layoutX="174.0" layoutY="43.0" text="Select four Random Horses ">
+                           <font>
+                              <Font name="Century" size="17.0" />
+                           </font></Label>
+                        <Button fx:id="selectButton" layoutX="413.0" layoutY="40.0" mnemonicParsing="false" onAction="#onSelectButtonClick" text="Select ">
+                           <font>
+                              <Font name="Century" size="14.0" />
+                           </font>
+                        </Button>
+                        <GridPane fx:id="selectedHorsesContent" layoutX="71.0" layoutY="67.0" prefHeight="451.0" prefWidth="548.0">
+                           <children>
+                              <!-- First horse -->
+                              <VBox alignment="CENTER" prefHeight="265.0" prefWidth="338.0">
+                                 <ImageView fx:id="horse1ImageView" fitHeight="157.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+                                 <Label fx:id="horse1IdLabel">
+                                    <font>
+                                       <Font name="Century" size="14.0" />
+                                    </font></Label>
+                                 <Label fx:id="horse1NameLabel">
+                                    <font>
+                                       <Font name="Century" size="14.0" />
+                                    </font></Label>
+                                 <Label fx:id="group1Label">
+                                    <font>
+                                       <Font name="Century" size="14.0" />
+                                    </font>
+                                 </Label>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="194.0" prefWidth="336.0" GridPane.columnIndex="1">
+                                 <children>
+                                    <ImageView fx:id="horse2ImageView" fitHeight="157.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="horse2IdLabel">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="horse2NameLabel">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="group2Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="238.0" prefWidth="111.0" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fx:id="horse3ImageView" fitHeight="157.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true">
+                                       <VBox.margin>
+                                          <Insets right="1.0" />
+                                       </VBox.margin>
+                                    </ImageView>
+                                    <Label fx:id="horse3IdLabel">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="horse3NameLabel">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="group3Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets top="60.0" />
+                                 </GridPane.margin>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="228.0" prefWidth="274.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <children>
+                                    <ImageView fx:id="horse4ImageView" fitHeight="157.0" fitWidth="166.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="horse4IdLabel">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="horse4NameLabel">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="group4Label">
+                                       <font>
+                                          <Font name="Century" size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets top="60.0" />
+                                 </GridPane.margin>
+                              </VBox>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints maxWidth="270.6000122070312" minWidth="269.0000366210937" prefWidth="269.0000366210937" />
+                              <ColumnConstraints maxWidth="279.39996337890625" minWidth="277.79998779296875" prefWidth="279.39996337890625" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="266.3999755859375" minHeight="200.00000610351563" prefHeight="232.00003662109373" />
+                              <RowConstraints maxHeight="187.19999389648441" minHeight="122.4000244140625" prefHeight="157.59996337890624" />
+                           </rowConstraints>
+
+                        </GridPane>
+
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="visualizationContent" layoutX="-1.0" prefHeight="554.0" prefWidth="670.0" visible="false">
+                     <children>
+                        <Label layoutX="282.0" layoutY="41.0" prefHeight="26.0" prefWidth="138.0" text="Visualization">
+                           <font>
+                              <Font name="Century" size="20.0" />
+                           </font></Label>
+                        <BarChart fx:id="barChart" layoutX="76.0" layoutY="135.0" prefHeight="312.0" prefWidth="508.0">
+                           <xAxis>
+                              <CategoryAxis side="BOTTOM" />
+                           </xAxis>
+                           <yAxis>
+                              <NumberAxis side="LEFT" />
+                           </yAxis>
+                        </BarChart>
+                        <Label layoutX="204.0" layoutY="72.0" prefHeight="34.0" prefWidth="280.0" text="Time Taken by Horses" visible="false">
+                           <font>
+                              <Font name="Century" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="winnersContent" layoutX="5.0" layoutY="-4.0" prefHeight="567.0" prefWidth="666.0">
+                     <children>
+                        <VBox fx:id="root" alignment="CENTER" layoutX="9.0" layoutY="49.0" prefHeight="514.0" prefWidth="658.0" spacing="10.0">
+                           <children>
+                              <HBox prefHeight="288.0" prefWidth="658.0" spacing="20.0">
+                                 <children>
+                                    <VBox prefHeight="288.0" prefWidth="219.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fx:id="firstPlaceImage" fitHeight="169.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label fx:id="firstPlaceName" alignment="CENTER">
+                                             <padding>
+                                                <Insets bottom="10.0" />
+                                             </padding>
+                                             <font>
+                                                <Font name="Century" size="16.0" />
+                                             </font></Label>
+                                          <Label fx:id="firstPlaceId" alignment="CENTER" />
+                                          <Label fx:id="firstPlaceJockey" alignment="CENTER" />
+                                          <Label fx:id="firstPlaceBreed" alignment="CENTER" />
+                                          <Label fx:id="firstPlaceTime" alignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="288.0" prefWidth="219.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fx:id="secondPlaceImage" fitHeight="169.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label fx:id="secondPlaceName" alignment="CENTER">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Century" size="16.0" />
+                                             </font></Label>
+                                          <Label fx:id="secondPlaceId" alignment="CENTER" />
+                                          <Label fx:id="secondPlaceJockey" alignment="CENTER" />
+                                          <Label fx:id="secondPlaceBreed" alignment="CENTER" />
+                                          <Label fx:id="secondPlaceTime" alignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="288.0" prefWidth="219.0" spacing="5.0">
+                                       <children>
+                                          <ImageView fx:id="thirdPlaceImage" fitHeight="169.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true" />
+                                          <Label fx:id="thirdPlaceName" alignment="CENTER">
+                                             <VBox.margin>
+                                                <Insets bottom="10.0" />
+                                             </VBox.margin>
+                                             <font>
+                                                <Font name="Century" size="16.0" />
+                                             </font></Label>
+                                          <Label fx:id="thirdPlaceId" alignment="CENTER" />
+                                          <Label fx:id="thirdPlaceJockey" alignment="CENTER" />
+                                          <Label fx:id="thirdPlaceBreed" alignment="CENTER" />
+                                          <Label fx:id="thirdPlaceTime" alignment="CENTER" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <Label layoutX="241.0" layoutY="69.0" prefHeight="32.0" prefWidth="214.0" text="Winning Horses">
+                           <font>
+                              <Font name="Century" size="25.0" />
+                           </font></Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="Background" prefHeight="563.0" prefWidth="673.0">
+                     <children>
+                        <ImageView fx:id="BackgroundImage" fitHeight="566.0" fitWidth="598.0" style="-fx-opacity: 0.2;">
+                           <image>
+                              <Image url="@horrse%20and%20girl.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

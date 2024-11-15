@@ -1,0 +1,80 @@
+Group A
+-------------
+Horse ID       : A1
+Horse Name     : Flash Forward
+Jockey Name    : Joshua Miller
+Age            : 8
+Breed          : Standardbred
+Race Record    : 9 wins,  3 second places,  5 third places
+Image Path     : src/main/resources/images/A1.jpg
+
+Horse ID       : A2
+Horse Name     : Midnight Shadow
+Jockey Name    : Alex Turner
+Age            : 5
+Breed          : Arabian
+Race Record    : 8 wins,  3 second places,  4 third places
+Image Path     : src/main/resources/images/A2.jpg
+
+Horse ID       : A3
+Horse Name     : wwww
+Jockey Name    : wwwwww
+Age            : 3
+Breed          : wwww
+Race Record    : www
+Image Path     : src/main/resources/images/horse.jpg
+
+Group B
+-------------
+Horse ID       : B1
+Horse Name     : Golden Blaze
+Jockey Name    : Jessica Smith
+Age            : 3
+Breed          : Quarter Horse
+Race Record    : 6 wins,  2 second places,  1 third place
+Image Path     : src/main/resources/images/B1.jpg
+
+Horse ID       : B2
+Horse Name     : Silver Bullet
+Jockey Name    : Daniel White
+Age            : 6
+Breed          : Appaloosa
+Race Record    : 12 wins,  8 second places,  3 third places
+Image Path     : src/main/resources/images/B2.jpg
+
+Group C
+-------------
+Horse ID       : C1
+Horse Name     : Phoenix Rising
+Jockey Name    : Ava Johnson
+Age            : 4
+Breed          : Paint Horse
+Race Record    : 10 wins,  6 second places,  3 third places
+Image Path     : src/main/resources/images/C1.jpg
+
+Horse ID       : C2
+Horse Name     : Firestorm
+Jockey Name    : Sarah Davis
+Age            : 4
+Breed          : Paint Horse
+Race Record    : 9 wins,  6 second places,  5 third places
+Image Path     : src/main/resources/images/C2.jpg
+
+Group D
+-------------
+Horse ID       : D1
+Horse Name     : Eclipse
+Jockey Name    : Lauren Taylor
+Age            : 6
+Breed          : Quarter Horse
+Race Record    : 14 wins,  5 second places,  3 third places
+Image Path     : src/main/resources/images/D1.jpg
+
+Horse ID       : D2
+Horse Name     : Thunderstruck
+Jockey Name    : Ryan Harris
+Age            : 4
+Breed          : Appaloosa
+Race Record    : 6 second places,  2 third places
+Image Path     : src/main/resources/images/D2.jpg
+

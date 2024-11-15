@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.horse_management_system.MainMenu">
+   <children>
+      <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="800.0" preserveRatio="true" style="-fx-opacity: 0.8;" />
+      <Label layoutX="111.0" layoutY="20.0" prefHeight="41.0" prefWidth="409.0" text="Rapid Run Horse Management System" textAlignment="CENTER">
+         <font>
+            <Font name="Agency FB" size="33.0" />
+         </font>
+      </Label>
+      <Button fx:id="addDetails" layoutX="229.0" layoutY="83.0" mnemonicParsing="false" onAction="#AddDetails" prefHeight="34.0" prefWidth="144.0" style="-fx-cursor: pointer;" styleClass="buttonMain" stylesheets="@mainPage.css" text="Add Horse Details" />
+      <Button fx:id="updateDetails" layoutX="229.0" layoutY="134.0" mnemonicParsing="false" onAction="#UpdateDetails" prefHeight="34.0" prefWidth="144.0" styleClass="buttonMain" stylesheets="@mainPage.css" text="Update Horse Details" />
+      <Button fx:id="deleteDetails" layoutX="229.0" layoutY="183.0" mnemonicParsing="false" onAction="#DeleteDetails" prefHeight="34.0" prefWidth="144.0" styleClass="buttonMain" stylesheets="@mainPage.css" text="Delete Horse Details" />
+      <Button fx:id="viewDetails" layoutX="229.0" layoutY="235.0" mnemonicParsing="false" onAction="#ViewDetails" prefHeight="34.0" prefWidth="144.0" styleClass="buttonMain" stylesheets="@mainPage.css" text="View Horse Details" />
+      <Button fx:id="startRace" layoutX="228.0" layoutY="288.0" mnemonicParsing="false" onAction="#StartRace" prefHeight="34.0" prefWidth="144.0" styleClass="button2Main" stylesheets="@mainPage.css" text="Start Race" />
+      <Button fx:id="exit" layoutX="229.0" layoutY="340.0" mnemonicParsing="false" onAction="#Exit" prefHeight="34.0" prefWidth="144.0" styleClass="button2Main" stylesheets="@mainPage.css" text="Exit" />
+   </children>
+</AnchorPane>
